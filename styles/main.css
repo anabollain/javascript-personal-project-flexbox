@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.panels{
+    /*General properties*/
+    min-height: 100vh;
+    overflow: hidden;
+    /*Display*/
+    display: flex;
+}
+
+.panel{
+    /*General properties*/
+    color: white;
+    font-size: 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*Display*/
+    flex: 1;
+    display: flex;
+    flex-direction: column;   
+    /*Transitions*/
+    transition: 
+    font-size 0.2s ease-in,
+    flex 0.4s ease-in,
+    background 0.2s; 
+}
+
+/*Panel images*/
+.panelOne{ 
+    background-image: url('../images/01.jpg');
+}
+.panelTwo{
+    background-image: url('../images/02.jpg');
+}
+.panelThree{
+    background-image: url('../images/06.jpg');
+}
+.panelFour{
+    background-image: url('../images/04.jpg');
+}
+.panelFive{
+    background-image: url('../images/05.jpg');
+}
+
+/*Flex items*/
+.panel > *{
+    /*General properties*/
+    width: 100%;
+    flex: 1 0 auto;
+    transition: transform 0.5s;
+    /*Display*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Text position*/
+.panel >*:first-child{
+    transform: translateY(-100%);
+}
+/*Add class from JS to show text*/
+.panel.open-active >*:first-child{
+    transform: translateY(0);
+}
+.panel >*:last-child{
+    transform: translateY(100%);
+}
+/*Add class from JS to show text*/
+.panel.open-active >*:last-child{
+    transform: translateY(0);
+}
+/*Widen image and scale text*/
+.panel.open{
+    flex: 4;
+    font-size: 50px;
+}
+
+
