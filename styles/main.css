@@ -32,19 +32,19 @@
 
 /*Panel images*/
 .panelOne{ 
-    background-image: url('../images/01.jpg');
+    background-image: url('../images/01-small.jpg');
 }
 .panelTwo{
-    background-image: url('../images/02.jpg');
+    background-image: url('../images/02-small.jpg');
 }
 .panelThree{
-    background-image: url('../images/06.jpg');
+    background-image: url('../images/06-small.jpg');
 }
 .panelFour{
-    background-image: url('../images/04.jpg');
+    background-image: url('../images/04-small.jpg');
 }
 .panelFive{
-    background-image: url('../images/05.jpg');
+    background-image: url('../images/05-small.jpg');
 }
 
 /*Flex items*/
